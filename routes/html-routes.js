@@ -1,5 +1,7 @@
 var path = require("path");
 
+var util = require('util')
+
 var db = require("../models");
 
 var express = require("express");
@@ -29,6 +31,7 @@ module.exports = function(app) {
 
 router.get("/:team", function(req, res) {
 	var team = req.params.team;
+	console.log(util.inspect(db.teaminfo, {showHidden: false, depth: null}))
 	db.playerStats.findAll({
 		where: {
 			mascot: team
