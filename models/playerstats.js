@@ -13,7 +13,7 @@ module.exports = function(sequelize, DataTypes) {
 	TeamInfo.associate = function(models) {
 		TeamInfo.hasMany(models.playerStats, {
 		foreignKey: 'mascot'
-		}),
+		});
 		TeamInfo.hasMany(models.gameSchedule, {
 			foreignKey: 'mascot'
 		})
