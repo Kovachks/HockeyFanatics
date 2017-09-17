@@ -10,11 +10,11 @@ module.exports = function(sequelize, DataTypes) {
 	},{
 		timestamps: false,
 	});
-	// GameSchedule.associate = function(models) {
-	// 	GameSchedule.belongsTo(models.teaminfo, {
-	// 		foreignKey: 'mascot',
-	// 		targetKey: 'mascot'
-	// 	})
-	// }
+	GameSchedule.associate = function(models) {
+		GameSchedule.belongsTo(models.teaminfo, {
+			foreignKey: 'mascot',
+			targetKey: 'mascot'
+		})
+	}
 	return GameSchedule
 }

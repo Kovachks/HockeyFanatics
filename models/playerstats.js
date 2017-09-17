@@ -10,14 +10,13 @@ module.exports = function(sequelize, DataTypes) {
 	},{
 		timestamps: false,
 	});
-
-	// TeamInfo.associate = function(models) {
-	// 	TeamInfo.hasMany(models.playerStats, {
-	// 	foreignKey: 'mascot'
-	// 	});
-	// 	TeamInfo.hasMany(models.gameSchedule, {
-	// 		foreignKey: 'mascot'
-	// 	})
-	// }
+	TeamInfo.associate = function(models) {
+		TeamInfo.hasMany(models.playerStats, {
+		foreignKey: 'mascot'
+		});
+		TeamInfo.hasMany(models.gameSchedule, {
+			foreignKey: 'mascot'
+		})
+	}
 	return TeamInfo
 };

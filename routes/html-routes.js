@@ -57,10 +57,6 @@ router.get("/:team/schedule", function(req, res) {
 		{
 			model: db.teaminfo,
 		}]
-		// ,
-		// order: [
-		// 	[db.gameSchedule, 'order', 'DESC']
-		// ]
 	}).then(function(result) {
 		console.log("Schedule Result: " + JSON.stringify({result}))
 		res.render("schedule", {team:result})
