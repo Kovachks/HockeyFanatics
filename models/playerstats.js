@@ -1,7 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
 	var TeamInfo = sequelize.define("teaminfo", {
 		mascot: {
-			type: DataTypes.STRING
+			type: DataTypes.STRING,
+			primaryKey: true
 		},
 		teamName: DataTypes.STRING,
 		primaryColor: DataTypes.STRING,
