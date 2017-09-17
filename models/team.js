@@ -13,11 +13,11 @@ module.exports = function(sequelize, DataTypes) {
 	},{
 	timestamps: false,
 	});
-	PlayerStats.associate = function(models) {
-		PlayerStats.belongsTo(models.teaminfo, {
-		foreignKey: 'mascot',
-		targetKey: 'mascot'
-		});
-	}
+	// PlayerStats.associate = function(models) {
+	// 	PlayerStats.belongsTo(models.teaminfo, {
+	// 	foreignKey: 'mascot',
+	// 	targetKey: 'mascot'
+	// 	});
+	// }
 	return PlayerStats
 }
