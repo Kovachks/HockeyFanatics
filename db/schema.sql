@@ -49,8 +49,7 @@ create table teaminfos (
     teamName VARCHAR(100) NOT NULL,
     primaryColor VARCHAR(10) NOT NULL,
     secondaryColor VARCHAR(10) NOT NULL,
-    primary key(id),
-    foreign key(mascot)
+    primary key(id)
 );
 
 use hockeyStats_db;
