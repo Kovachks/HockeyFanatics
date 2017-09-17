@@ -1,0 +1,234 @@
+.nav-link{
+	color: white;
+}
+.nav-link:hover {
+	color: grey;	
+}
+#playerStats {
+	width: 90%;
+	margin: 0px 5% 0 5%;
+}
+#teamSchedule {
+	width: 90%;
+	margin: 0px 5% 100px 5%;
+}
+
+#alinkcolor{
+	color:#151617;
+}
+	#alink {
+		width: 200px;
+		text-align: center;
+		margin: auto;
+		padding: auto;
+		border-radius: 10px;
+		background-color:#5E89C1;
+		color:black;
+list-style:none;
+text-decoration: none;
+}
+	#alink :hover{
+		color:rgba(96, 12, 0, 0.93);
+		text-decoration: none;
+	}
+		#container-fluid {
+margin-top:120px;
+	}
+.fa-home:before{
+	color: #A4A3E7;
+	    font-size: x-large
+}
+.fa-group:before,
+.fa-users:before{
+	color: #A4A3E7;
+}
+		div#navbarResponsive.collapse.navbar-collapse {
+			width: 100%;
+			/* margin-top: 100px; */
+			/* padding-top: 200px; */
+			margin-left:100px;
+		/* padding-right: 50px; */
+			text-align: center;
+			position: relative;
+			float: right;
+			max-width: 500px;
+	}
+  		.navbar-dark .navbar-nav .nav-link{
+				max-width: 100%;
+				font-size: 18px;
+				color: #121601;
+			margin-right: 50px;
+			text-align: center;
+
+		}
+		.wrapper{
+			text-align: center;
+			 margin:0 auto;
+			 width:200px;
+			
+		}
+			#myBtn {
+
+			text-align: center;
+font-size: 40px;
+height: 100px;
+/* width: 20px; */
+
+		}
+#login{
+	color:#333;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+/* div#loginContainer.container{
+	 box-shadow: 20px 12px 20px 0px black;
+	    margin-right: auto;
+			 margin-left: auto;
+	     width: 100%;
+	
+	
+} */
+#cardHeader{
+	color:beige;
+	font-size: 20px;
+	background-color: #d33;
+}
+
+/* ***************************************************************** */
+.nav {
+	width: 100%;
+}
+#header {
+	width: 100%;
+	height: 130px;
+}
+#teamLogo {
+	position: relative;
+	left: 16px;
+}
+.teamName {
+	position: absolute;
+	width: 400px;
+	left: 16px;
+	top: 100px;
+	font-size: 20px;
+	margin: 0;
+}
+.teamCity {
+	width: 100px;
+	left: 205px;
+	top: 10px;
+	margin: 0;
+}
+.teamTableImage {
+	
+	width: 65px;
+	height: 50px;
+}
+.teamLink{
+	width: 65px;
+	height: 50px;
+}
+#Eastern {
+	text-shadow: 10px -4px 9px black;
+ 	box-shadow: 1px 1px 13px 4px black;
+	position: relative;
+	width: 100%;
+	height: 40px;
+	font-size: 30px;
+	padding: 4px 0 0 10px;
+	margin: 0;
+	background-color: #d33;
+	color: white;
+}
+#Western {
+	text-shadow: 10px -4px 9px black;
+	box-shadow: 1px 1px 13px 4px black;
+	position: relative;
+	width: 100%;
+	height: 40px;
+	font-size: 30px;
+	padding: 4px 0 0 10px;
+	margin: 0;
+	background-color: #0645ad;
+	color: white;
+}
+.easternDivision{
+	font-size: 20px;
+}
+.westernDivision{
+	font-size: 20px;
+}
+#teamTable {
+	width: 900px;
+	font-size: 22px;
+}
+#tableContainer {
+	position: relative;
+	background-color: white;
+}
+.logo {
+	height: 175px;
+	width: 175px;
+}
+#pipa{
+	font-size: 1em;
+	font-weight: bold;
+	color: #26F0F0;
+	width: 383px;
+}
+#pipa:hover{
+	color: #F8E95F;
+}
+.headerTitle {
+ margin-top: 40px;
+	float: left;
+	text-shadow: 10px -4px 9px black;
+	color: white;
+	margin-left: 50px;
+}
+@media (min-width: 576px) {
+	.eight-cols .col-sm-1 {
+		flex: 0 0 12.5%;
+		max-width: 12.5%;
+	}
+}
+.sectionHeader {
+	margin: 15px 0 0 5%;
+}
+.scheduleImage {
+	height: 35px;
+	width: 35px;
+	margin: 0 0 0 16px;
+}
+/* leageICONS$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ #animLogo{
+	 width: 150px;
+}
+#mainNav{
+position: absolute;	
+}
+.fa fa-get-pocket{
+	color: indianred;
+}
+
+	#LigaIcons{
+		margin-right: 218px;
+		/* height: 800px; */
+		width:auto;
+	}
+	.leaguenav{
+		height: 300px;
+			width: 1020px;
+		}	
+
+div.networkmenu{
+
+	height: 200px;
+    width: 1100px;
+    display: inline;
+    float: right;
+    text-align: center;
+}
