@@ -3,7 +3,7 @@ module.exports = function(sequelize, DataTypes) {
 		vs: DataTypes.STRING,
 		opponent: DataTypes.STRING,
 		mascot: DataTypes.STRING,
-		gameDate: DataTypes.DATE,
+		gameDate: DataTypes.DATEONLY,
 		time: DataTypes.STRING,
 		timezone: DataTypes.STRING,
 		chanceToWin: DataTypes.INTEGER
