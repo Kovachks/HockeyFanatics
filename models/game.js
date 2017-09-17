@@ -6,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
 		gameDate: DataTypes.DATEONLY,
 		time: DataTypes.STRING,
 		timezone: DataTypes.STRING,
-		chanceToWin: DataTypes.INTEGER
+		chanceToWin: DataTypes.STRING
 	},{
 		timestamps: false,
 	});
