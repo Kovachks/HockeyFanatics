@@ -8,13 +8,19 @@ var express = require("express");
 
 var router = express.Router();
 
+var passport = require('passport')
+
+var session = require('express-session')
+
+var bodyParser = require('body-parser')
+
 module.exports = function(app) {
 	app.get("/", function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/index.html"));
 	});
 	// LOG IN HTML ROUTE
-	app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+	app.get("/login/loginPage", function(req, res) {
+		res.send('Welcome to Passport')
 	});
 	// REGISTER HTML ROUTE
 		app.get("/registration", function(req, res) {
@@ -46,6 +52,13 @@ router.get("/:team", function(req, res) {
 	});
 });
 
+ 	router.post("/registration/login/submit", function(req, res) {
+ 		console.log("registration")
+	    db.user.create(req.body).then(function(dbPost) {
+	      res.json(dbPost);
+	    });
+  	});
+
 router.get("/:team/schedule", function(req, res) {
 	var team = req.params.team;
 	db.gameSchedule.findAll({
@@ -62,8 +75,18 @@ router.get("/:team/schedule", function(req, res) {
 		res.render("schedule", {team:result})
 	});
 });
-router.get("/registration", function(reg, res) {
-	res.render(registration)
+router.get("/request/register", function(reg, res) {
+	res.render("registration")
 })
+router.get("/request/login", function(reg, res) {
+	res.render("login")
+})
+ router.post("/registration/login/", function(req, res) {
+ 	console.log("registration")
+	db.user.create(req.body).then(function(dbPost) {
+		res.json(dbPost);
+	});
+	res.sendFile(path.join(__dirname, "index.html"));
+});
 
 module.exports = router;
