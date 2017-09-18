@@ -81,12 +81,12 @@ router.get("/request/register", function(reg, res) {
 router.get("/request/login", function(reg, res) {
 	res.render("login")
 })
- router.post("/registration/login/", function(req, res) {
+router.route("/request/register").post(function(req, res) {
  	console.log("registration")
 	db.user.create(req.body).then(function(dbPost) {
 		res.json(dbPost);
 	});
-	res.sendFile(path.join(__dirname, "index.html"));
+	res.render('team')
 });
 
 module.exports = router;
